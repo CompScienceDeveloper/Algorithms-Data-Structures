@@ -90,17 +90,18 @@ a)  Bitwise Operators
 	Applications of bit operations:-
 
 	1) They are widely used in areas of graphics ,specially XOR(Exclusive OR) operations.
-	2) They are widely used in the embedded systems, in situations, where we need to set/clear/toggle just one single bit of a specific register without modifying the other contents. We can do OR/AND/XOR operations with the appropriate mask for the bit position.
+	2) They are widely used in the embedded systems, in situations, where we need to set/clear/toggle just one single bit of a 	
+	   specific register without modifying the other contents. We can do OR/AND/XOR operations with the appropriate mask for the bit 	    position.
 	3) Data structure like n-bit map can be used to allocate n-size resource pool to represent the current status.
-	4) Bits are used in networking, framing the packets of numerous bits which is sent to another system generally through any type of serial interface.
+	4) Bits are used in networking, framing the packets of numerous bits which is sent to another system generally through any type 	   of serial interface.
 
 	
 b) Basic Operators
 	First, let's categorize them:
-	1. Arithmetic (+,-,*,/)
-	2. Relational  (== , < , > , !=, <=, >=)
+	1. Arithmetic   (+,-,*,/)
+	2. Relational   (== , < , > , !=, <=, >=)
 	3. Bitwise      (& ,|, ~, ^, <<, >>)
-	4. Logical		(&&, ||, !)
+	4. Logical	(&&, ||, !)
 	5. Assignment	(=, !=, /=, +=, -= , *=, %=) (check for bitwise operator combination with =)
 	6. Increment	(++, -- )
 	7. Miscellaneous
@@ -119,17 +120,18 @@ c) Arrays & Strings
 	 int []a=new int[array_size];
 	 int a[]={1,2,3,4};
 	 int a[]=new int[] {1,2,3,4};
-	{ int a[];
-	  a=new int[5];
-	}
+	 {
+	 int a[];
+	 a=new int[5];
+	 } // the brackets are used only to display that both lines are part of same declaration
 	
 	
 1)	Array
 	Access :- 		O(1)
 	Search :-		O(n) 		Linear 
-					O(log n) 	Binary Search (NOTE: array has to be sorted for binary search) 
-	Insertion :-	O(1) 		in end
-					O(n) 		in middle as we have to shift the elements
+				O(log n) 	Binary Search (NOTE: array has to be sorted for binary search) 
+	Insertion :-		O(1) 		in end
+				O(n) 		in middle as we have to shift the elements
 	Deletion:- 		O(n)		shift all the elements
 2)  Advantages of using arrays:-
 	-Arrays allow random access of elements. This makes accessing elements by position faster.
@@ -151,13 +153,13 @@ d) Sorting
 	
 	NOTE : REMOVE O(Big Oh) by Ω in best case and by θ(theta) in average case, the O is used
 	I have used it in such way for easy memorization of table
-					   Ω				θ
+					   Ω				θ		    O	
 					Best Case		Average Case		Worst Case		(Time Complexities)
 
-	Bubble Sort		 O(N)			  O(N^2)			  O(N^2)
-	Insertion Sort 	 O(N) 			  O(N^2)			  O(N^2)
-	Selection Sort	 O(N^2)			  O(N^2)			  O(N^2)
-	Merge Sort 		O(N log N)		O(N log N)			 O(N log N)
+	Bubble Sort		 	O(N)			  O(N^2)		  O(N^2)
+	Insertion Sort 	 		O(N) 			  O(N^2)			  O(N^2)
+	Selection Sort	 		O(N^2)			  O(N^2)			  O(N^2)
+	Merge Sort 		      O(N log N)		O(N log N)			 O(N log N)
 	
 1) 	Bubble Sort - Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping
 	the adjacent elements if they are in wrong order.
@@ -178,19 +180,19 @@ d) Sorting
 	Stable: No (For default implementation Not Stable)
 	Auxiliary Space: O(1)
 	Usability:- The good thing about selection sort is it never makes more than O(n) swaps and
-				can be useful when memory write is a costly operation.
+		    can be useful when memory write is a costly operation.
 	
 3) 	Insertion sort
 	Insertion sort is a simple sorting algorithm that works the way we sort playing cards in our
 	hands.
 	Uses:-
-		i) Insertion sort is used when number of elements is small. It can also be useful when 
+	    i) Insertion sort is used when number of elements is small. It can also be useful when 
 	   ii) Input array is almost sorted, only few elements are misplaced in complete big array.
 	Sorting In Place: Yes
 	Stable: Yes
 	Auxiliary Space: O(1)
 	Usability: Insertion sort is used when number of elements is small. It can also be useful when 
-			    input array is almost sorted, only few elements are misplaced in complete big array.
+		   input array is almost sorted, only few elements are misplaced in complete big array.
 
 4) 	Merge Sort
 	Merge Sort is a Divide and Conquer algorithm. It divides input array in two halves, calls itself 
@@ -207,11 +209,10 @@ d) Sorting
 	
 
 e) Hash Table
-	https://www.youtube.com/watch?v=c3RVW3KGIIE
 		
-f)	Hash Map 
+f) Hash Map (https://www.youtube.com/watch?v=c3RVW3KGIIE)
 	
-	HASH Map (from JAVA perspective)
+	HASH Map
 	-Hash Map works on key value pair concept or association between a key and it's value.
 	a key is passed to hash function and it's equivalent hash is returned then the hash value is
 	coverted to a index (as hashvalues are large and we practically don't use such big arrays) and
@@ -231,8 +232,8 @@ f)	Hash Map
 	-Hash Map is one of the Data Structure whose implementation is provided in java.util package
 	-Hash Map implements Map Interface(part of  Collection framework of java.util)
 	-No sequential order iteration
-	- Hash Map is preffered over default implementation of hash table
-	Methods 
+	-Hash Map is preffered over default implementation of hash table
+	 Methods 
 		put(key , value ) // for inserting
 		get(Object key) // for fetching
 		
@@ -240,10 +241,10 @@ f)	Hash Map
 	
 	Parsing:-
 	for(int i: test){
-		S.O.P(i);
+		system.out.println(i);
 	}
 	
-g)	Hash Set & Tree Set	
+g)  Hash Set & Tree Set	
 	
 	Hash Set:-
 	1)Hash Set does not holds duplicate values thus Set is collection of unique objects or elements.
