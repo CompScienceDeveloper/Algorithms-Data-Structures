@@ -2,8 +2,21 @@
 
 1) Character to String
 String test=Character.toString('c');
-2) Big O growth
- O(1)<O(log n) < O(sqrt n) < O(n) < O(n log n) < O(n^2) < O(a^n) < O(n!)
+2) 					Big O growth
+		 O(1)<O(log n) < O(sqrt n) < O(n) < O(n log n) < O(n^2) < O(a^n) < O(n!)
+		 
+Growth of several common time complexities, and thus help you judge if your algorithm is fast enough to get  Accepted
+		 Length Of Input(N)	 Worst Accepted Algorithm	 
+		   <= [10..11]			O(N!), O(N^6)
+		   <= [15..18]			O(2^N * N^2)
+		   <= [18..22]			O(2^N * N)
+		   <= 100			O(N^4)
+		   <= 400			O(N^3)
+		   <= 2K			O(N^2 * log N)
+		   <= 10K			O(N^2)
+		   <= 1M			O(N * log N)
+		   <= 100M			O(N), O(log N), O(1)
+		   
 3) Integer.parseInt(br.readLine());
 	Long.parseLong(String x);
 4) char ch=x.charAt(i); i is int, x is string
